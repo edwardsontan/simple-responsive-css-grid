@@ -1,0 +1,77 @@
+@import url(et-init.css);
+
+/*! Responsive grid CSS based on https://github.com/laluluny/creatix-css/ */
+
+/* it is essential to use <div class='row'> to encapsulate elements with class='col-x' in order to terminate css float */
+.row {
+	display: block;
+	width: 100%;
+	clear: both;
+	&:after {
+		display: block;
+		margin: 0;
+		padding: 0;
+		clear: both;
+		content: " ";
+		font-size: 0;
+	}
+}
+
+
+/* Change this gutter size as required. Must be specified as percentage. A value of zero removes gutters completely. 
+Bear in mind that column width decreases as gutter width increases. */
+$gutter: 0.5%;
+
+[class*="col-"] {
+	margin: 0 $gutter; 
+	padding: 0 1em;
+	display: inline-block;
+	float: left;
+	position: relative;
+}
+
+
+/* The col-x class specifies how wide the element will be, wherein width as percentage = (x/12)*100 - (gutter*2) */
+.col-1 {width: 1/12 * 100% - $gutter * 2}
+.col-2 {width: 2/12 * 100% - $gutter * 2}
+.col-3 {width: 3/12 * 100% - $gutter * 2}
+.col-4 {width: 4/12 * 100% - $gutter * 2}
+.col-5 {width: 5/12 * 100% - $gutter * 2}
+.col-6 {width: 6/12 * 100% - $gutter * 2}
+.col-7 {width: 7/12 * 100% - $gutter * 2}
+.col-8 {width: 8/12 * 100% - $gutter * 2}
+.col-9 {width: 9/12 * 100% - $gutter * 2}
+.col-10 {width: 10/12 * 100% - $gutter * 2}
+.col-11 {width: 11/12 * 100% - $gutter * 2}
+.col-12 {width: 12/12 * 100% - $gutter * 2}
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+
+/* if a spacer to the left of the column is necessary then use left-x to specify number of column widths as padding */
+.left-1 {left: 1/12 * 100%}
+.left-2 {left: 2/12 * 100%}
+.left-3 {left: 3/12 * 100%}
+.left-4 {left: 4/12 * 100%}
+.left-5 {left: 5/12 * 100%}
+.left-6 {left: 6/12 * 100%}
+.left-7 {left: 7/12 * 100%}
+.left-8 {left: 8/12 * 100%}
+.left-9 {left: 9/12 * 100%}
+.left-10 {left: 10/12 * 100%}
+.left-11 {left: 11/12 * 100%}
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+
+/* change to single column layout for small viewports */
+@media screen and (max-width: 640px) {
+	[class*="col-"] {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	[class*="left-"] {
+		left: 0;
+	}
+}
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
