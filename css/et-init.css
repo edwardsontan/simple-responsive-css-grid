@@ -47,3 +47,11 @@ div.table {
 
 a {
   text-decoration: none; }
+
+q::before {
+  content: '\201C'
+  /* opening double quote: &ldquo; U+201C, when the typeface being used has curly quotes  */ }
+
+q::after {
+  content: '\201D'
+  /* closing double quote: &rdquo; U+201D, when the typeface being used has curly quotes */ }
