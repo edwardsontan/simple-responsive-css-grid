@@ -9,8 +9,8 @@ Edwardson Tan
 [Normalize.css](https://necolas.github.io/normalize.css/) is by Nicolas Gallagher and Jonathan Neal. Their stylesheet is provided on an [MIT License](https://opensource.org/licenses/MIT).
 
 ## Features ##
-* All columns widths are specified in percentage of viewport.
-* Column widths automatically change to single-column layout for small viewport devices and resized broswers on desktops.
+* All columns widths are specified as percentages.
+* Multi-column layout automatically changes to a single column for small viewport devices and resized broswers on desktops.
 * Coded in SCSS with gutter margin defined as a variable and is therefore adjustable to suit page/site requirements.
 
 ## Requirements ##
