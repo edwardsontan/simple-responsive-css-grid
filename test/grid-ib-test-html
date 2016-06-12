@@ -226,7 +226,7 @@
 </main>
 
 <footer>
-	<h2>This footer section is not within a flexbox grid</h2>
+	<h2>This footer section is not within the grid system</h2>
 <!-- 	<p><a href="https://creativecommons.org/licenses/by-sa/4.0'" target="_blank"><img src="../images/CC-BY-SA-88x31.png" alt="CC BY-SA" title="CC BY-SA" /></a></p> -->
 </footer>
 
